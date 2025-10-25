@@ -17,5 +17,11 @@
   --main-heading-color: #000028;
   --nav-color: #ff0070;
   --nav-hover-color: rgb(255 0 112 / 0.4);
+  --section-heading-color: #ff0070;
+  --header-logo-color: #db00ff;
+  --footer-logo-color: #db00ff;
+}
 
+.theme-dark .header__rec {
+  display: block;
 }
