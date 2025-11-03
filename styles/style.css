@@ -5,6 +5,7 @@
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  padding-right: var(--main-gap);
 }
 
 .header {
@@ -21,6 +22,7 @@
 /* Декоративные элементы хэдера*/
 
 .decorated-zone {
+
   &::before,
   &::after {
     content: '';
@@ -42,7 +44,7 @@
     left: var(--main-gap);
     bottom: var(--main-gap);
   }
-  
+
 }
 
 .header__rec {
@@ -259,7 +261,7 @@
   place-items: center;
 }
 
-@media (width >= 768px) {
+@media (width >=768px) {
   .header {
     margin-bottom: 40px;
     min-height: 1024px;
@@ -270,7 +272,6 @@
     inline-size: calc(50% - 10px);
     justify-self: right;
     margin-bottom: 14px;
-    margin-right: 0px;
   }
 
   .why {
@@ -332,7 +333,7 @@
   }
 }
 
-@media (width >= 1024px) {
+@media (width >=1024px) {
 
   .header {
     min-height: 768px;
@@ -376,7 +377,7 @@
   }
 
   .text-block__subtitle {
-  margin-top: 20px;
+    margin-top: 20px;
   }
 
   .causes {
