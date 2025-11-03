@@ -20,26 +20,32 @@
 
 /* Декоративные элементы хэдера*/
 
-.decorated-zone::before,
-.decorated-zone::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  aspect-ratio: 1;
-}
+.decorated-zone {
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    aspect-ratio: 1;
+  }
 
-.decorated-zone::after {
-  border-top: var(--border-decor);
-  border-right: var(--border-decor);
-  right: var(--main-gap);
-  top: var(--main-gap);
-}
+  &::after {
+    border-top: var(--border-decor);
+    border-right: var(--border-decor);
+    right: var(--main-gap);
+    top: var(--main-gap);
+  }
 
-.decorated-zone::before {
-  border-bottom: var(--border-decor);
-  border-left: var(--border-decor);
-  left: var(--main-gap);
-  bottom: var(--main-gap);
+  @media (width >=1024px) {
+      right: 5px;
+    }
+
+  &::before {
+    border-bottom: var(--border-decor);
+    border-left: var(--border-decor);
+    left: var(--main-gap);
+    bottom: var(--main-gap);
+  }
 }
 
 .header__rec {
@@ -348,7 +354,6 @@
     justify-self: center;
     flex-direction: column;
     align-self: flex-start;
-    height: 100%;
     margin-left: 20px;
     margin-top: 4px;
   }
@@ -359,10 +364,6 @@
 
   .header__rec {
     right: 56px;
-  }
-
-  .decorated-zone::after {
-    right: 5px;
   }
 
   .content {
