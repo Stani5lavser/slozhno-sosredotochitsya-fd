@@ -158,21 +158,11 @@
   font-style: normal;
   line-height: 23.4px;
   font-size: 18px;
-
-  /* @media (width >= 1024px) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-  } */
 }
 
 .text-blocks {
   display: grid;
   gap: 20px;
-
-  /* @media (width >= 1024px) {
-    grid-column: span 2;
-  } */
 }
 
 .text-block {
