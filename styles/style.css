@@ -330,11 +330,6 @@
     min-height: 1024px;
     margin-top: 42px;
   }
-
-  .footer {
-    min-height: 1024px;
-    margin-top: 42px;
-  }
 }
 
 @media (width >= 1024px) {
