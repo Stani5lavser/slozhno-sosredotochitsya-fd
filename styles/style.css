@@ -25,20 +25,16 @@
   &::after {
     content: '';
     position: absolute;
-    width: 25px;
+    inline-size: 25px;
     aspect-ratio: 1;
   }
 
   &::after {
     border-top: var(--border-decor);
     border-right: var(--border-decor);
-    right: var(--main-gap);
+    right: var(--right-gap);
     top: var(--main-gap);
   }
-
-  @media (width >=1024px) {
-      right: 5px;
-    }
 
   &::before {
     border-bottom: var(--border-decor);
@@ -46,6 +42,7 @@
     left: var(--main-gap);
     bottom: var(--main-gap);
   }
+  
 }
 
 .header__rec {
@@ -54,7 +51,7 @@
   color: var(--nav-color);
   text-transform: uppercase;
   line-height: 25px;
-  width: 10px;
+  inline-size: 10px;
   top: var(--main-gap);
   right: calc(var(--main-gap) + 50px);
 }
@@ -121,13 +118,13 @@
   border-bottom: var(--border-decor);
 }
 
-.header__theme-menu-button:hover:not(.header__theme-menu-button_active),
-.header__theme-menu-button_active {
-  border: var(--border-decor);
+.header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
+  border: 1px solid var(--nav-hover-color);
 }
 
 .header__theme-menu-button_active {
   pointer-events: none;
+  border: var(--border-decor);
 }
 
 /* Контент хэдер */
@@ -150,6 +147,7 @@
   font-weight: 700;
   line-height: 23.4px;
   font-size: 18px;
+  margin-right: 3px;
 }
 
 /* Основной контент */
@@ -182,6 +180,7 @@
   color: var(--accent-color);
   margin-bottom: 10px;
   font-size: 18px;
+  min-height: 23px;
 }
 
 .text-block__title {
@@ -235,8 +234,8 @@
 
 .gallery__image {
   display: block;
-  height: 100%;
-  width: 100%;
+  block-size: 100%;
+  inline-size: 100%;
   object-fit: cover;
 }
 
@@ -260,7 +259,7 @@
   place-items: center;
 }
 
-@media (width >=768px) {
+@media (width >= 768px) {
   .header {
     margin-bottom: 40px;
     min-height: 1024px;
@@ -268,9 +267,10 @@
   }
 
   .header__paragraph {
-    width: calc(50% - 10px);
+    inline-size: calc(50% - 10px);
     justify-self: right;
     margin-bottom: 14px;
+    margin-right: 0px;
   }
 
   .why {
@@ -281,7 +281,7 @@
   }
 
   .what {
-    width: 30%;
+    inline-size: 30%;
   }
 
   .advice {
@@ -337,11 +337,11 @@
   }
 }
 
-@media (width >=1024px) {
+@media (width >= 1024px) {
 
   .header {
     min-height: 768px;
-    padding-right: 6px;
+    padding-right: 0px;
   }
 
   .header__theme-menu {
@@ -349,7 +349,7 @@
     justify-self: center;
     flex-direction: column;
     align-self: flex-start;
-    margin-left: 20px;
+    margin-left: 15px;
     margin-top: 4px;
   }
 
