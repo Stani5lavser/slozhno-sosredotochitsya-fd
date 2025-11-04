@@ -356,7 +356,6 @@
 
   .header {
     min-height: 768px;
-    /* padding-right: 0px; */
   }
 
   .header__theme-menu {
@@ -364,20 +363,20 @@
     justify-self: center;
     flex-direction: column;
     align-self: flex-start;
-    /* margin-left: 15px; */
-    /* margin-top: 4px; */
+    margin-top: -3px;
   }
 
   .header__theme-menu-list {
     grid-auto-flow: column;
+    gap: 10px;
   }
 
   .header__rec {
-    right: 56px;
+    right: 50px;
   }
 
-  .content {
-    /* padding-right: 4px; */
+  .header__paragraph {
+    inline-size: 51%;
   }
 
   .content-section {
@@ -396,7 +395,7 @@
   }
 
   .text-block__subtitle {
-    /* margin-top: 20px; */
+    margin-top: 20px;
   }
 
   .causes {
