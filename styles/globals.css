@@ -13,7 +13,7 @@ body {
   font-family: var(--main-font-family, monospace);
   font-size: 18px;
   line-height: 1.5;
-  background-color: var(--main-bg-color, #fff);
+  background-color: var(--bg-color);
 }
 
 h1,

@@ -12,7 +12,8 @@
 
   --bg-image: url('../images/cover-image-dark.png');
   --accent-color: var(--approximately-black, #000028);
-  --main-bg-color:var(--real-red, #ff0070);
+  --main-bg-color: var(--real-red, #ff0070);
+  --bg-color: var(--approximately-black, #000028);
   --main-text-color: var(--text-pink, #f1b2ce);
   --main-heading-color: var(--approximately-black, #000028);
   --nav-color: var(--real-red, #ff0070);
@@ -28,15 +29,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-  --bg-image: url('../images/cover-image-dark.png');
-  --accent-color: var(--approximately-black, #000028);
-  --main-bg-color:var(--real-red, #ff0070);
-  --main-text-color: var(--text-pink, #f1b2ce);
-  --main-heading-color: var(--approximately-black, #000028);
-  --nav-color: var(--real-red, #ff0070);
-  --nav-hover-color: rgb(255 0 112 / 0.4);
-  --section-heading-color: var(--real-red, #ff0070);
-  --header-logo-color: var(--title-plum, #db00ff);
-  --footer-logo-color: var(--title-plum, #db00ff);
+    --bg-image: url('../images/cover-image-dark.png');
+    --accent-color: var(--approximately-black, #000028);
+    --main-bg-color: var(--real-red, #ff0070);
+    --bg-color: var(--approximately-black, #000028);
+    --main-text-color: var(--text-pink, #f1b2ce);
+    --main-heading-color: var(--approximately-black, #000028);
+    --nav-color: var(--real-red, #ff0070);
+    --nav-hover-color: rgb(255 0 112 / 0.4);
+    --section-heading-color: var(--real-red, #ff0070);
+    --header-logo-color: var(--title-plum, #db00ff);
+    --footer-logo-color: var(--title-plum, #db00ff);
   }
 }

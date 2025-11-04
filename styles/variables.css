@@ -2,7 +2,7 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
- :root {
+:root {
   --main-font-family: 'IBM Plex mono', monospace;
   --real-red: #ff0070;
   --approximately-black: #000028;
@@ -11,29 +11,34 @@
   --almost-black: #353430;
   --basic-pink: #ff8dcb;
   --light-pink: #ffc2e6;
+  --almost-white-bg: #FFF1F7;
   --bg-image: url('../images/cover-image-dark.png');
   --main-gap: 10px;
   --right-gap: 10px;
   --main-text-size: 18px;
   --main-line-height: 1.3;
-  --header-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /*Для мобильных*/
+  --header-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  /*Для мобильных*/
   --header-logo-color: #db00ff;
-  --footer-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /*Для мобильных*/
+  --footer-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  /*Для мобильных*/
   --footer-logo-color: #db00ff;
   --border-decor: 1px solid var(--nav-color);
- }
+}
 
- @media (width >= 768px) {
+@media (width >=768px) {
   :root {
     --main-gap: 20px;
     --right-gap: 20px;
-    --header-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);  /* Для планшета и десктопа */
-    --footer-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);  /* Для планшета и десктопа */
+    --header-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    /* Для планшета и десктопа */
+    --footer-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    /* Для планшета и десктопа */
   }
- }
+}
 
- @media (width >= 1024px) {
+@media (width >=1024px) {
   :root {
     --right-gap: 5px;
   }
- }
+}

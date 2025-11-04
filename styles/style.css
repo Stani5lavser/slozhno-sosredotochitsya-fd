@@ -21,30 +21,26 @@
 
 /* Декоративные элементы хэдера*/
 
-.decorated-zone {
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  inline-size: 25px;
+  aspect-ratio: 1;
+  border-top: var(--border-decor);
+  border-right: var(--border-decor);
+  right: var(--right-gap);
+  top: var(--main-gap);
+}
 
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    inline-size: 25px;
-    aspect-ratio: 1;
-  }
-
-  &::after {
-    border-top: var(--border-decor);
-    border-right: var(--border-decor);
-    right: var(--right-gap);
-    top: var(--main-gap);
-  }
-
-  &::before {
-    border-bottom: var(--border-decor);
-    border-left: var(--border-decor);
-    left: var(--main-gap);
-    bottom: var(--main-gap);
-  }
-
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  inline-size: 25px;
+  aspect-ratio: 1;
+  border-bottom: var(--border-decor);
+  border-left: var(--border-decor);
+  left: var(--main-gap);
+  bottom: var(--main-gap);
 }
 
 .header__rec {
@@ -176,20 +172,21 @@
   font-weight: 700;
 }
 
-.text-block__title,
+.text-block__title {
+  background-color: var(--main-bg-color);
+  color: var(--accent-color);
+  margin-bottom: 10px;
+  font-size: 18px;
+  min-height: 23px;
+  font-weight: 700;
+}
+
 .text-block__subtitle {
   background-color: var(--main-bg-color);
   color: var(--accent-color);
   margin-bottom: 10px;
   font-size: 18px;
   min-height: 23px;
-}
-
-.text-block__title {
-  font-weight: 700;
-}
-
-.text-block__subtitle {
   margin-top: 10px;
   font-weight: 400;
 }
